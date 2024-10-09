@@ -22,8 +22,26 @@ Sumber data: https://www.ibm.com/communities/analytics/watson-analytics-blog/wat
 
 Setup environment:
 
-```
+```bash
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
 
+from sklearn.preprocessing import LabelEncoder
+from sklearn.model_selection import train_test_split
+
+#model machine learning
+from sklearn.linear_model import LogisticRegression
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.svm import SVC
+from xgboost import XGBClassifier
+
+# evaluasi model
+from sklearn.metrics import confusion_matrix, recall_score, f1_score, accuracy_score, precision_score
+
+# deploy
+from joblib import dump, load
 ```
 
 ## Business Dashboard
@@ -40,6 +58,8 @@ Berdasarkan hasil analisis, ada beberapa faktor yang berpengaruh signifikan terh
 5. Lama Bekerja di Perusahaan: Karyawan yang sudah lama bekerja di perusahaan memiliki kecenderungan untuk tetap tinggal. Loyalitas mereka terhadap perusahaan lebih tinggi dibandingkan dengan karyawan yang baru saja bergabung.
 6. Status Pernikahan: Karyawan yang sudah menikah memiliki kecenderungan yang lebih rendah untuk melakukan resign. Kemungkinan mereka mencari stabilitas yang lebih tinggi dalam pekerjaan, yang mempengaruhi keputusan untuk tetap tinggal.
 
+Dengan model prediksi terbaik menggunakan **Random Forest**, perusahaan dapat mengidentifikasi karyawan yang berisiko resign dengan akurasi sebesar **84.9%**, sehingga bisa mengambil langkah preventif.
+
 ### Rekomendasi Action Items (Optional)
 Berdasarkan kesimpulan di atas, berikut adalah beberapa rekomendasi yang dapat dilakukan oleh perusahaan untuk mengurangi tingkat pergantian karyawan:
 1. Peningkatan Gaji dan Tunjangan: Mengidentifikasi karyawan dengan performa tinggi dan memberikan kenaikan gaji atau insentif yang lebih kompetitif agar mereka merasa lebih dihargai dan terdorong untuk tetap tinggal.
@@ -47,4 +67,5 @@ Berdasarkan kesimpulan di atas, berikut adalah beberapa rekomendasi yang dapat d
 3. Program Retensi untuk Karyawan Baru: Mengembangkan program onboarding yang lebih efektif dan menyusun strategi retensi khusus untuk karyawan yang baru bergabung agar mereka lebih cepat beradaptasi dan merasa nyaman di perusahaan.
 4. Peningkatan Keterlibatan Karyawan Senior: Memberikan peran mentor atau tanggung jawab tambahan bagi karyawan yang sudah lama bekerja untuk meningkatkan keterlibatan mereka dan memanfaatkan pengalaman mereka untuk mendorong loyalitas.
 5. Dukungan untuk Karyawan yang Menikah: Menyediakan program kesejahteraan yang mendukung karyawan yang sudah menikah, seperti asuransi keluarga, tunjangan anak, atau kebijakan cuti yang lebih baik untuk mendukung keseimbangan kehidupan pribadi dan pekerjaan.
+
 Implementasi dari action items ini diharapkan dapat membantu perusahaan dalam mengurangi tingkat pergantian karyawan dan meningkatkan kepuasan serta loyalitas karyawan dalam jangka panjang.
