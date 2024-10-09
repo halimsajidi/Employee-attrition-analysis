@@ -43,6 +43,42 @@ from sklearn.metrics import confusion_matrix, recall_score, f1_score, accuracy_s
 # deploy
 from joblib import dump, load
 ```
+### Exploratory Data Analysis
+
+![image](https://github.com/user-attachments/assets/bafbd5fa-349a-4abd-b23c-6d7eaf60d231)
+
+Berdasarkan grafik di atas menunjukkan bahwa proporsi karyawan yang meninggalkan perusahaan jauh lebih sedikit dibandingkan yang tetap tinggal.
+
+
+![image](https://github.com/user-attachments/assets/cacba7b7-42b0-45b4-8e90-0d21d8abc5ed)
+
+Dapat dilihat karyawan yang berumur lebih 30 sampai 40 tahun-an cenderung tetap tinggal di tempat kerja, dibandingkan dengan karyawan yang berumur dibawah 40 tahun sampai 20 tahun-an.
+
+
+![image](https://github.com/user-attachments/assets/de441d83-3b46-4b32-bfea-8d1866894a25)
+
+Pengaruh penghasilan bulanan dapat dilihat pada grafik di atas, karyawan yang memiliki penghasilan bulanan lebih besar cenderung lebih memilih tinggal dibandingkan dengan karyawan yang memliki penghasilan bulanan lebih rendah.
+
+
+![image](https://github.com/user-attachments/assets/c4f283d1-d45f-4c66-a771-01a00adc6280)
+
+Grafik di atas menunjukkan bahwa karyawan yang sering bekerja lembur lebih cenderung resign dibandingkan yang tidak.
+
+
+![image](https://github.com/user-attachments/assets/3274c82d-c288-4e92-b57f-7ba4734a76b2)
+
+Berdasarkan grafik dia atas, Work-Life Balance tidak menjadi alasan karyaman melakukan resign
+
+
+![image](https://github.com/user-attachments/assets/01e44ae1-ec01-4844-a12b-7d9475d2eaee)
+
+Karyawan yang lebih lama bekerja di perusahaan cenderung lebih memlih untuk tetap tinggal dibandingkan dengan karyawan yang belum lama bekerja, walapun dapat dilihat pada grafik terdapat karyawan yang memutuskan resign walaupun sudah lama bekerja.
+
+
+![image](https://github.com/user-attachments/assets/0dbfa6a2-1aff-4082-a58d-c4c18fe5c7b0)
+
+Berdasarkan grafik di atas, menikah menjadi salah satu alasan mengapa karyawan tidak melakukan resign dan tetap tinggal di perusahaannya.
+
 
 ## Business Dashboard
 
