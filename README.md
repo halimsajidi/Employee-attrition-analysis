@@ -79,6 +79,26 @@ Karyawan yang lebih lama bekerja di perusahaan cenderung lebih memlih untuk teta
 
 Berdasarkan grafik di atas, menikah menjadi salah satu alasan mengapa karyawan tidak melakukan resign dan tetap tinggal di perusahaannya.
 
+## Cara menggunakan model
+### load dataset
+Berikut adalah contoh load dataset
+```bash
+df = pd.read_csv('employee_data_for_machinelearing.csv')
+```
+Sebelum dataset digunakan, terlebih dahulu dilakukan drop kolom seperti dibawah ini
+```bash
+df_prediksi = df.drop(columns=['EmployeeId','Attrition'], axis=1)
+```
+
+### load model dan prediksi
+Selanjutnya dilakukan load model berdasarkan model yang sudah dibuat dan melalukan prediksi pada data yang belum pernah dilihat sebelumnya. walaupun pada saat ini dataset yang digunakan masih sama dengan yang dilakukan saat traning. Namun, di sini saya hanya menunjukkan bahwa model sudah berjalan dan dapat digunakan sebagaimana mestinya.
+```bash
+# Memuat model dari file
+loaded_model = load('random_forest_model.joblib')
+
+# Menggunakan model untuk prediksi
+predictions = loaded_model.predict(df_prediksi)
+```
 
 ## Business Dashboard
 
